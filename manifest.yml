@@ -1,0 +1,8 @@
+applications:
+- name: aztech-demo
+  memory: 1024MB
+  host: aztech-demo
+  path: target/aztech-demo-0.0.1-SNAPSHOT.jar
+  buildpack: java_buildpack_4_16_1
+  env:
+      JAVA_OPTS: "-Dhttp.proxyHost=surf.proxy.agis.allianz -Dhttp.proxyPort=8080 -Dhttps.proxyHost=surf.proxy.agis.allianz -Dhttps.proxyPort=8080 -Duser.timezone=Europe/Dublin"
