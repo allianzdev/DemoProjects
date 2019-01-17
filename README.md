@@ -10,7 +10,7 @@ https://aztech-demo.apps.adp.allianz/batch/52125/status
 Some commands for starting with ADP :-
 
 ADP CLI to be installed from
-K:\DC_installations\Installs for Java Developers\ADP CLI
+https://apps.sys.adp.allianz/organizations/e179aadb-e19f-4b9e-85c7-40575cb5a9ec/tools
 
 From command prompt -> 
 
