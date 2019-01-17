@@ -1,4 +1,4 @@
-package com.aztech.pulse.config;
+package com.aztech.demo.config;
 
 
 import org.springframework.beans.factory.annotation.Autowired;

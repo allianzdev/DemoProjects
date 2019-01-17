@@ -1,4 +1,4 @@
-package com.aztech.pulse;
+package com.aztech.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

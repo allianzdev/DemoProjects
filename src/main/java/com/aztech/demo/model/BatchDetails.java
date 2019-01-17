@@ -1,4 +1,4 @@
-package com.aztech.pulse.model;
+package com.aztech.demo.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
