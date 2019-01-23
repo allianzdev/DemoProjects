@@ -1,7 +1,8 @@
 applications:
-- name: ih-gateway-service
+- name: demo-gateway-service
   memory: 1024MB
-  host: ih-gateway-dev-service
-  path: target/gateway-service-0.0.1-SNAPSHOT.jar
+  host: demo-gateway-service-dev
+  path: target/demo-gateway-0.0.1-SNAPSHOT.jar
+  buildpack: java_buildpack_4_16_1
   env:
       JAVA_OPTS: "-Dspring.profiles.active=cloud-dev -Dhttp.proxyHost=surf.proxy.agis.allianz -Dhttp.proxyPort=8080 -Dhttps.proxyHost=surf.proxy.agis.allianz -Dhttps.proxyPort=8080 -Duser.timezone=Europe/Dublin"

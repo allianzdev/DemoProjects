@@ -1,0 +1,25 @@
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+    config:
+      discovery:
+        service-id: demo-config-service
+        enabled: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10000/eureka/
+    instance:
+      preferIpAddress: true
+
+server:
+  port: 1111
+
+demo:
+  gateway:
+    authorization-service: lb://authorization-service
+    demo-service: lb://demo-service

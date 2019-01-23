@@ -1,0 +1,8 @@
+applications:
+- name: demo-service
+  memory: 1024MB
+  host: demo-service-dev
+  path: target/demo-service-0.0.1-SNAPSHOT.jar
+  buildpack: java_buildpack_4_16_1
+  env:
+      JAVA_OPTS: "-Dspring.profiles.active=cloud-dev -Dhttp.proxyHost=surf.proxy.agis.allianz -Dhttp.proxyPort=8080 -Dhttps.proxyHost=surf.proxy.agis.allianz -Dhttps.proxyPort=8080 -Duser.timezone=Europe/Dublin"

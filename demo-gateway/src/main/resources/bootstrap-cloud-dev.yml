@@ -1,7 +1,7 @@
 spring:
   cloud:
     config:
-      uri: https://demo-config-service.apps.adp.allianz/
+      uri: https://demo-config-service-dev.apps.adp.allianz/
 
 eureka:
   client:
@@ -10,4 +10,4 @@ eureka:
 demo:
   gateway:
     authorization-service: https://ih-authorization-dev-service.apps.adp.allianz
-    demo-service: https://demo-service.apps.adp.allianz
+    demo-service: https://demo-service-dev.apps.adp.allianz

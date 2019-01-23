@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    config:
+      uri: https://demo-config-service.apps.adp.allianz/
+
+eureka:
+  client:
+    enabled: false
