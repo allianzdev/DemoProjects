@@ -1,7 +1,7 @@
 spring:
   cloud:
     config:
-      uri: https://ih-config-devspace-service.apps.adp.allianz/
+      uri: https://demo-config-service.apps.adp.allianz/
 
 eureka:
   client:

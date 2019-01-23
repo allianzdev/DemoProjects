@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.aztech.demo</groupId>
-	<artifactId>demo-service</artifactId>
+	<artifactId>demo-config</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>demo-service</name>
-	<description>Spring cloud gateway</description>
+	<name>demo-config-service</name>
+	<description>Demo project for Spring Boot for Configuration Service</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -28,28 +28,11 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-config</artifactId>
+			<artifactId>spring-cloud-config-server</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
-		<!-- Micormeter core dependecy  -->
-		<dependency>
-			<groupId>io.micrometer</groupId>
-			<artifactId>micrometer-core</artifactId>
 		</dependency>
 	</dependencies>
 
@@ -61,7 +44,7 @@
 				<version>${spring-cloud.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
-            </dependency>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
@@ -73,5 +56,6 @@
 			</plugin>
 		</plugins>
 	</build>
+
 
 </project>

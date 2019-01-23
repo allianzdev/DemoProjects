@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: discovery-service
+server:
+  port: 10000
+eureka:
+  instance:
+    hostname: localhost
